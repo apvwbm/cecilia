@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Cecilia",
+    "slug": "cecilia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "cecilia",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF4C5",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.aitorperez.cecilia"
+    },
+    "android": {
+      "package": "com.aitorperez.cecilia",
+      "versionCode": 1,
+      "allowBackup": false,
+      "blockedPermissions": [
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "monochromeImage": "./assets/images/monochrome-icon.png",
+        "backgroundColor": "#1800AD"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFF4C5",
+          "image": "./assets/images/splash-vacio.png",
+          "imageWidth": 1
+        }
+      ],
+      "expo-sharing",
+      ["expo-sqlite", { "useSQLCipher": true }],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
